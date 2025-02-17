@@ -1,8 +1,33 @@
-# React + Vite
+# Сервис Прямых Трансляций
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Обзор
+Это **сервис прямых трансляций**, созданный на **React** и **Vite**. Он позволяет пользователям вести и смотреть прямые эфиры в реальном времени с быстрой и лёгкой фронтенд-частью.
 
-Currently, two official plugins are available:
+## 🚀 Возможности
+- Поддержка прямых трансляций
+-  Чат во время трансляции
+- Поиск и категории стримов
+- Аутентификация и профили пользователей
+- Подписки и подписчики
+- Адаптивный интерфейс
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## 📦 Установка
+
+### Клонирование репозитория
+```sh
+git clone https://github.com/your-username/live-streaming-service.git
+cd live-streaming-service
+```
+
+### Установка зависимостей
+```sh
+npm install
+```
+
+### Запуск сервера разработки
+```sh
+npm run dev
+```
+
+Приложение будет доступно по адресу `http://localhost:5173/` (порт Vite по умолчанию).
