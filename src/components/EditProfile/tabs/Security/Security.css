@@ -1,0 +1,13 @@
+.str-info {
+    z-index: 10;
+    position: absolute;
+    bottom: 14%;
+    min-width: 200px;
+    left: 37%
+  }
+
+.str-info p {
+    font-size: 16px;
+}
+  
+  

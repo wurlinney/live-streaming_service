@@ -1,0 +1,48 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileContainer {
+    position: relative;
+    display: flex;
+    margin-top: 4%;
+    flex-direction: column;
+}
+.backContainer {
+    margin: 2% 0% 1% 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.backIcon {
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+}
+
+.sectionContainer {
+    display: flex;
+    gap: 20px;
+    margin-left: 4%;
+}
+
+.sectionNames {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.sectionNames:hover {
+    color: #F25197;
+}
+
+.activeTab {
+    color: #F25197;
+    border-bottom: 2px solid #F25197;
+}
+
+.tabContent {
+    align-items: center;
+    justify-content: center;
+}

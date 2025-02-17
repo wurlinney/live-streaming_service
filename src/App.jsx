@@ -1,11 +1,11 @@
 import './App.css'
-import Header from './components/Header/Header'
+import EditProfile from './components/EditProfile/EditProfile'
 
 function App() {
 
 
   return (
-    <Header/>
+    <EditProfile/>
   );
 }
 
