@@ -98,6 +98,12 @@ function Security() {
                     <button onClick={savePassword}>Сохранить изменения</button>
                 </div>
             </div>
+            <div className="twofaContainer">
+              <h2>Включение двухфакторной аутентификации</h2>
+              <div className="inputContainer">
+                <button>Активировать</button>
+              </div>
+            </div>
         </div>
     );
 }

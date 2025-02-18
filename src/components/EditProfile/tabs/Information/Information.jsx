@@ -42,8 +42,8 @@ function Information() {
         <div className="avatarContainer">
           <h2>Аватар</h2>
           <div className="change">
-            <h2>Изменить</h2>
-            <img src='/bin.svg' className="binIcon"/>
+            <button>Изменить</button>
+            <button><img src='/bin.svg' className="binIcon"/></button>
           </div>
           <img src='/avatarPlaceholder.svg' className='avatarPlaceholder'/>
         </div>
