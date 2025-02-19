@@ -1,0 +1,263 @@
+.avatar-container {
+    justify-self: center;
+    position: relative;
+}
+
+.profileContainer {
+    position: relative;
+    display: flex;
+    margin-top: 4%;
+    flex-direction: column;
+}
+
+.profileHeader {
+    display: flex;
+    flex-direction: row;
+    width: 88%;
+    align-self: center;
+    align-items: center;
+    gap: 50px;
+    margin: 3% 0;
+}
+
+.imagePlaceholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+}
+
+.level {
+    position: absolute;
+    background-color: #F25197;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    left: 65%;
+    top: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.level p {
+    margin: 0;
+    font-family: 'Inter';
+    color: white;
+    font-size: 16px;
+}
+
+.userInfo {
+    width: 40%;
+    
+}
+
+.userInfoSections {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    text-align: left;
+    font-size: 16px;
+    
+}
+
+.userName {
+    text-align: left;
+    margin: 0;
+    font-weight: 400;
+}
+
+.userInfoCategory {
+    margin: 20px 0px 10px 0px;
+    font-size: 12px;
+    color:#474747;
+}
+
+.userInfoData {
+    margin: 0 0 10% 0;
+}
+
+.editButton {
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Inter';
+    margin-bottom: 1%;
+    background-color: transparent;
+    display: flex;
+    align-self: flex-start;
+    border: 1px solid #F25197;
+    color: #F25197;
+    padding: 5px 10px 5px;
+    border-radius: 20px;
+}
+
+.subscriptionContainer {
+    width: 338px;
+    height: 150px;
+    border-radius: 20px;
+    background: linear-gradient(#9A5FCF, #FBB7D0);
+    text-align: left;
+    font-size: 20px;
+    padding-left: 20px;
+    margin: 0;
+    margin-left: 15%;
+}
+
+.subscriptionContainer h2 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 15% 0 0 0;
+}
+
+.subscriptionContainer p {
+    margin: 0 auto;
+    font-weight: 800;
+}
+
+.subscriptionButton {
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Inter';
+    margin-top: 2%;
+    background-color: transparent;
+    display: flex;
+    align-self: flex-start;
+    border: 1px solid;
+    padding: 5px 10px 5px;
+    border-radius: 20px;
+}
+
+
+.sliderWrapper {
+    margin-bottom: 2%;
+    width: 90%;
+    align-self: center;
+
+}
+
+.splide__list {
+    justify-content: center;
+    gap: 0
+}
+
+.splide {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.splide__track {
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    width: 95%;
+}
+
+.splide__slide {
+    flex: 1;
+}
+
+.userTrophy {
+    background-color: #D9D9D9;
+    width: 250px;
+    height: 200px;
+}
+
+.splide__arrow--prev {
+    left: -4em;
+}
+
+.splide__arrow--prev {
+    left: -1em !important;
+}
+
+.splide__arrow--next {
+    right: -1em !important;
+}
+
+.sliderTitle {
+    align-self: flex-start;
+    margin: 0 0 1% 6%;
+}
+
+.sliderTitle h3 {
+    font-weight: 400;
+    font-size: 16;
+}
+
+.galleryContainer {
+    display: flex;
+    justify-content: center;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 4px;
+    width: 85%;
+}
+
+.gallery-item {
+    width: 100%;
+    padding-top: 75%;
+}
+
+.photogalleryTitle {
+    display: flex;
+    flex-direction: row;
+    padding: 0 7%;
+    align-items: center;
+}
+
+.showAllButton {
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Inter';
+    background-color: transparent;
+    display: flex;
+    align-self: center;
+    border: none;
+    color: #F25197;
+    margin: 0 0  0 75%;
+    position: relative;
+}
+
+.showMoreIcon {
+    width: 30px;
+    height: 30px;
+    align-self: flex-start;
+    top: 5%;
+    left: 94%;
+    position: absolute;
+}
+
+.photogalleryTitle h2 {
+    font-weight: 400;
+    font-size: 24;
+}
+
+.gallery-item:nth-child(6n + 1),
+.gallery-item:nth-child(6n + 3),
+.gallery-item:nth-child(6n + 5) {
+  background-color: #D9D9D9;
+}
+
+.gallery-item:nth-child(6n + 2),
+.gallery-item:nth-child(6n + 4),
+.gallery-item:nth-child(6n + 6) {
+  background-color: #BBBBBB;
+}
+
+.modalTitle {
+    background: linear-gradient(#9A5FCF, #FBB7D0);
+    margin: 10% 0 1% 0;
+}
+
+.modalTitle h1 {
+    margin: 10% 0 1% 0;
+}
+
+.modalTitle p {
+    margin: 0
+}
+
+
