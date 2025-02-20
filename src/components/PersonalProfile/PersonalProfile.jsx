@@ -8,7 +8,7 @@ import SubscriptionModal from '../SubscriptionModal/SubscriptionModal';
 
 function PersonalProfile () {
     
-    const [modalActive, setModalActive] = useState(true)
+    const [modalActive, setModalActive] = useState(false)
 
     return(
         <div className='personalProfile'>
