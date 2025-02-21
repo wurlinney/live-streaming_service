@@ -49,7 +49,6 @@
 
 .userInfo {
     width: 40%;
-    
 }
 
 .userInfoSections {
@@ -93,39 +92,55 @@
 }
 
 .subscriptionContainer {
-    width: 338px;
-    height: 150px;
-    border-radius: 20px;
-    background: linear-gradient(#9A5FCF, #FBB7D0);
+    width: 100%;
+    border-radius: 20px;    
+    background: #FF8DBF;
     text-align: left;
     font-size: 20px;
-    padding-left: 20px;
-    margin: 0;
-    margin-left: 15%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    /*overflow: hidden;*/
 }
 
 .subscriptionContainer h2 {
     font-weight: 400;
     font-size: 20px;
-    margin: 15% 0 0 0;
+    margin: 0 0 0 7%;
+    color: white;
+    font-family: 'RussoOne';
 }
 
-.subscriptionContainer p {
-    margin: 0 auto;
-    font-weight: 800;
+.subscriptionLogo {
+    margin: 9% 0 0 6%;
+    width: 75%;
+    height: auto;
+}
+
+.subscriptionEye {
+    display: flex;
+    position: absolute;
+    top: 8%;
+    right: -3%;
+    width: 60%;
+    height: auto;
 }
 
 .subscriptionButton {
+    width: 338px;
+    height: 150px;
     cursor: pointer;
     font-size: 20px;
     font-family: 'Inter';
-    margin-top: 2%;
+    border: none;
     background-color: transparent;
     display: flex;
-    align-self: flex-start;
-    border: 1px solid;
-    padding: 5px 10px 5px;
+    border: none;
     border-radius: 20px;
+    padding: 0;
+    margin: 0 auto;
 }
 
 

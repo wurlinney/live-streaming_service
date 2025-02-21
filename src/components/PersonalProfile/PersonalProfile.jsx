@@ -39,11 +39,13 @@ function PersonalProfile () {
                     </div>
                     <button className='editButton'>Редактировать профиль</button>
                 </div>
-                <div className='subscriptionContainer'>
-                    <h2>Подписка</h2>
-                    <p>itsee+</p>
-                    <button className='subscriptionButton' onClick={() => setModalActive(true)}>Подключить</button>
-                </div>
+                <button className='subscriptionButton' onClick={() => setModalActive(true)}>
+                    <div className='subscriptionContainer'>
+                    <img src = '/subscriptionLogo.svg' className='subscriptionLogo'/>
+                    <img src='/subscriptionEye.svg' className='subscriptionEye'/>
+                    <h2>подписка</h2>
+                    </div>
+                </button>
             </div>
             <div className='sliderTitle'>
                 <h3>Трофеи и достижения</h3>

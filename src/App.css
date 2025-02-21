@@ -8,6 +8,12 @@
   src: url(./assets/fonts/Orbitron.ttf);
 }
 
+
+@font-face {
+  font-family: 'RussoOne';
+  src: url(./assets/fonts/RussoOne.ttf);
+}
+
 body {
     margin: 0;
     font-family: 'Inter';
