@@ -92,9 +92,9 @@ function Information() {
               value = {isKeyVisible ? streamKey : maskedKey}
               onChange={handleKeyChange}
               />
-              <label htmlFor="streamKey" className='eyeButton' onClick={toggleKeyVisibility}>
+              <button htmlFor="streamKey" className='eyeButton' onClick={toggleKeyVisibility}>
                 <img src={isKeyVisible ? '/eye_off.svg' : "/eye.svg"} className="eyeIcon"/>
-              </label>
+              </button>
               </div>
           <button onClick={resetStreamKey}>Сбросить</button>
           </div>
