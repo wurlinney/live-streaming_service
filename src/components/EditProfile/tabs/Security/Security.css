@@ -1,7 +1,7 @@
 .str-info {
     z-index: 10;
     position: absolute;
-    bottom: 32.5%;
+    bottom: 14%;
     min-width: 200px;
     left: 37%
   }
@@ -28,6 +28,7 @@
 }
 
 .twofaContainer h2 {
-  margin-bottom: 0%;
+  margin-bottom: 2%;
 }
+  
   

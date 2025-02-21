@@ -90,24 +90,24 @@
     flex-direction: column;
     gap: 10px;
     width: 100%;
-  }
-  
-  .inputGroup {
+}
+
+.inputGroup {
     display: flex;
     align-items: center;
     gap: 18px;
     width: 100%;
     margin-left: 3%;
-  }
-  
-  .inputContainer label {
+}
+
+.inputContainer label {
     font-size: 16px;
     font-family: 'Inter';
     width: 200px;
     text-align: right;
-  }
-  
-  .inputContainer input {
+}
+
+.inputContainer input {
     width: 15%;
     height: 12px;
     padding: 10px;
@@ -116,9 +116,7 @@
     border: 1px solid #555555;
     border-radius: 8px;
     background-color: #ffffff;
-    padding: 10px 40px 10px 10px;
-    position: relative;
-  }
+}
 
 button {
     cursor: pointer;
@@ -147,15 +145,13 @@ button {
 }
 
 
+.inputGroup input {
+    padding: 10px 40px 10px 10px;
+}
+
 .eyeButton {
     position: absolute;
-    cursor: pointer;
-    background: none;
-    padding: 0;
-    width: 20px;
-    height: 20px;
-    border: none !important;
-    right: 65%;
+    left: 24.2%;
 }
 
 .eyeIcon {

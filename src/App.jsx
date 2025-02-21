@@ -1,12 +1,13 @@
 import './App.css'
-import PersonalProfile from './components/PersonalProfile/PersonalProfile';
+import UserProfile from './components/UserProfile/UserProfile';
 
 
 function App() {
 
 
   return (
-    <PersonalProfile/>
+
+    <UserProfile/>
   );
 }
 
