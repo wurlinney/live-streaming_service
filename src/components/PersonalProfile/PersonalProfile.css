@@ -65,6 +65,7 @@
     text-align: left;
     margin: 0;
     font-weight: 400;
+    font-family: 'Orbitron';
 }
 
 .userInfoCategory {
@@ -144,6 +145,7 @@
     display: flex;
     justify-content: center;
     margin: auto;
+    z-index: 0;
 }
 
 .splide__track {

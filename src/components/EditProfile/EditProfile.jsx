@@ -22,7 +22,7 @@ function EditProfile() {
   };
 
   return (
-    <div className="profile">
+    <div className="editProfile">
       <Header />
       <div className="profileContainer">
         <div className="backContainer">

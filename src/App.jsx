@@ -1,11 +1,11 @@
 import './App.css'
-import EditProfile from './components/EditProfile/EditProfile'
+import UserProfile from './components/UserProfile/UserProfile';
 
 function App() {
 
 
   return (
-    <EditProfile/>
+    <UserProfile/>
   );
 }
 
