@@ -9,6 +9,8 @@ function Security() {
     const [passwordMatchError, setPasswordMatchError] = useState(false);
     const [lengthError, setLengthError] = useState(false);
     const [passwordStrength, setPasswordStrength] = useState(null);
+    const [isTwoFAEnabled, setIsTwoFAEnabled] = useState(false);
+    const [verificationCode, setVerificationCode] = useState("");
 
 
     const handleCurrentPasswordChange = (e) => {
@@ -53,6 +55,14 @@ function Security() {
       localStorage.setItem("userPassword", JSON.stringify(userData));
     };
 
+    const activate2FA = () => {
+      setIsTwoFAEnabled(true);
+    }
+
+    const handleCodeChange = (e) => {
+      setVerificationCode(e.target.value);
+  }
+
     return (
         <div className="sectionsContainer">
             <div className="mainContainer">
@@ -72,7 +82,7 @@ function Security() {
                         </label>
                     </div>
                     <div className="inputGroup">
-                      <label>Новый пароль</label>
+                      <label className="">Новый пароль</label>
                       <input
                       type="password"
                       value={password}
@@ -86,8 +96,7 @@ function Security() {
                       value={repeatePassword}
                       onChange={handleRepeateInputChange}
                       />
-                    </div>
-                    <div className="str-info ">
+                      <div className="str-info ">
                       {lengthError && (
                         <p className="passwordAlert">Минимум 8 символов</p>
                       )}
@@ -95,14 +104,31 @@ function Security() {
                         <p className="passwordAlert">Пароли не совпадают</p>
                       )}
                     </div>
+                    </div>
+                    
                     <button onClick={savePassword}>Сохранить изменения</button>
                 </div>
             </div>
             <div className="twofaContainer">
               <h2>Включение двухфакторной аутентификации</h2>
+              {isTwoFAEnabled && (
+                  <>
+                    <p>Вам на почту был отправлен код подтверждения</p>
+                    <div className="inputContainer">
+                    <div className="inputGroup">
+                      <label>Введите код</label>
+                      <input
+                      type="text"
+                      value={verificationCode}
+                      onChange={handleCodeChange}
+                      />
+                    </div>
+                    </div>
+                    </>
+                )}
               <div className="inputContainer">
-                <button>Активировать</button>
-              </div>
+                <button onClick={activate2FA}>Активировать</button>
+                </div>
             </div>
         </div>
     );
