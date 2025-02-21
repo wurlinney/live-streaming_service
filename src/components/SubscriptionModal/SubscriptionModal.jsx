@@ -9,7 +9,7 @@ function SubscriptionModal ({ active, setActive }) {
                     <h1>itsee+</h1>
                     <p>Стримьте вместе с нами – ваш захватывающий мир</p>
                     <p>визуального контента уже ждёт вас!</p>
-                    <img src='/runningGuy.svg' className='runningGuyIcon'/>
+                    <img src='/subscriptionEyeSmooth.svg' className='subscriptionEyeSmoothIcon'/>
                     <button className='closeModalButton' onClick={() => setActive(false)}><img src='/arrowRight.svg'/></button>
                 </div>
                 <div className='subscription-info'>

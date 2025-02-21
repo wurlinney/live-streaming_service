@@ -1,16 +1,17 @@
-import './PersonalProfile.css'
+import './UserProfile.css'
+import '../PersonalProfile/PersonalProfile.css'
 import Header from "../Header/Header";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
 import { useState } from 'react';
+import MessageModal from '../MessageModal/MessageModal';
 
-import SubscriptionModal from '../SubscriptionModal/SubscriptionModal';
 
-function PersonalProfile () {
+function UserProfile () {
     
-    const [modalActive, setModalActive] = useState(false)
+    const [modalActive, setModalActive] = useState(false);
 
-    return(
+    return (
         <div className='personalProfile'>
             <Header/>
             <div className='profileContainer'>
@@ -22,30 +23,30 @@ function PersonalProfile () {
                     </div>
                 </div>
                 <div className='userInfo'>
-                    <h2 className='userName'>user123</h2>
+                    <h2 className='userName'>user1000</h2>
                     <div className='userInfoSections'>
                     <div className='userInfoSection'>
                         <p className='userInfoCategory'>Дата регистрации</p>
-                        <p className='userInfoData'>01.02.2025</p>
+                        <p className='userInfoData'>05.12.2020</p>
                     </div>
                     <div className='userInfoSection'>
                         <p className='userInfoCategory'>Страна, город</p>
-                        <p className='userInfoData'>Россия, Санкт-Петербург</p>
+                        <p className='userInfoData'>Россия, Москва</p>
                     </div>
                     <div className='userInfoSection'>
                         <p className='userInfoCategory'>Пол</p>
                         <p className='userInfoData'>Мужской</p>
                     </div>
+                    <div className='userInfoSection'>
+                        <p className='userInfoCategory'>Топ стримеров</p>
+                        <p className='userInfoData'>#9</p>
                     </div>
-                    <button className='editButton'>Редактировать профиль</button>
+                    </div>
+                    <div className='buttonChannelContainer'>
+                    <button className='profileButton'>Перейти в канал</button>
+                    <button className='profileButton' onClick={() => setModalActive(true)}>Сообщение</button>
+                    </div>
                 </div>
-                <button className='subscriptionButton' onClick={() => setModalActive(true)}>
-                    <div className='subscriptionContainer'>
-                    <img src = '/subscriptionLogo.svg' className='subscriptionLogo'/>
-                    <img src='/subscriptionEye.svg' className='subscriptionEye'/>
-                    <h2>подписка</h2>
-                    </div>
-                </button>
             </div>
             <div className='sliderTitle'>
                 <h3>Трофеи и достижения</h3>
@@ -55,35 +56,32 @@ function PersonalProfile () {
                 hasTrack={false}
                 options={{
                     type:"loop",
-                    perPage: 5,
+                    perPage: 3,
                     trimSpace: false,
                     start: 0,
                     wheel: true,
                     pagination: false,
-                    gap: "30px",
+                    gap: "35px",
                 }}
                 >
                         <SplideTrack>
                             <SplideSlide>
-                                <div className='userTrophy'/>
+                                <img src='/trophy1.svg' className='userTrophyIcon'/>
                             </SplideSlide>
                             <SplideSlide>
-                                <div className='userTrophy'/>
+                                <img src='/trophy2.svg' className='userTrophyIcon'/>
                             </SplideSlide>
                             <SplideSlide>
-                                <div className='userTrophy'/>
+                                <img src='/trophy3.svg' className='userTrophyIcon'/>
                             </SplideSlide>
                             <SplideSlide>
-                                <div className='userTrophy'/>
+                                <img src='/trophy4.svg' className='userTrophyIcon'/>
                             </SplideSlide>
                             <SplideSlide>
-                                <div className='userTrophy'/>
+                                <img src='/trophy5.svg' className='userTrophyIcon'/>
                             </SplideSlide>
                             <SplideSlide>
-                                <div className='userTrophy'/>
-                            </SplideSlide>
-                            <SplideSlide>
-                                <div className='userTrophy'/>
+                                <img src='/trophy6.svg' className='userTrophyIcon'/>
                             </SplideSlide>
                         </SplideTrack>
                 </Splide>
@@ -103,9 +101,9 @@ function PersonalProfile () {
             </div>
             </div>
             </div>
-            <SubscriptionModal active={modalActive} setActive={setModalActive}/>
+            <MessageModal active={modalActive} setActive={setModalActive}/>
         </div>
     )
 }
 
-export default PersonalProfile;
+export default UserProfile;
