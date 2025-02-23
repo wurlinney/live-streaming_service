@@ -5,9 +5,11 @@ import "@splidejs/splide/css";
 import { useState } from 'react';
 
 import SubscriptionModal from '../SubscriptionModal/SubscriptionModal';
+import {useNavigate} from "react-router-dom";
 
 function PersonalProfile () {
-    
+
+    const navigate = useNavigate();
     const [modalActive, setModalActive] = useState(false)
 
     return(
@@ -37,7 +39,7 @@ function PersonalProfile () {
                         <p className='userInfoData'>Мужской</p>
                     </div>
                     </div>
-                    <button className='editButton'>Редактировать профиль</button>
+                    <button className='editButton' onClick={() => navigate('/editprof')}>Редактировать профиль</button>
                 </div>
                 <button className='subscriptionButton' onClick={() => setModalActive(true)}>
                     <div className='subscriptionContainer'>

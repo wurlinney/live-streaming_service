@@ -1,0 +1,126 @@
+.auth-modal {
+    position: relative;
+    width: 200%;
+    left: -50%;
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    justify-self: center;
+    padding: 0;
+}
+
+.auth-modal .left-side {
+    width: 50%;
+    background: linear-gradient(135deg, rgba(255, 141, 191, 0.7), rgba(250, 21, 131, 0.7)), url('../../assets/eye-auth.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px 0 0 25px;
+}
+
+.auth-modal .right-side {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.modal-header-auth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+}
+
+.modal-header-auth h2 {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0;
+}
+
+.closeModalButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.closeModalButton img {
+    height: 30px;
+    width: 30px;
+}
+
+.auth-modal input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.options-auth {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.options-auth label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.options-auth button {
+    background: none;
+    border: none;
+    color: #FF8DBF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.auth-button {
+    font-size: 18px;
+    background-color: #FF8DBF;
+    padding: 12px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.auth-modal p {
+    font-size: 14px;
+}
+
+.auth-modal p button {
+    background: none;
+    border: none;
+    color: #FF8DBF;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.gender-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.back-button {
+    font-size: 16px;
+    background: none;
+    border: 2px solid #FF8DBF;
+    padding: 10px;
+    color: #FF8DBF;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+}

@@ -4,9 +4,11 @@ import Information from "./tabs/Information/Information";
 import Security from "./tabs/Security/Security";
 import Connections from "./tabs/Connections/Connections";
 import "./EditProfile.css";
+import {useNavigate} from "react-router-dom";
 
 function EditProfile() {
   const [activeTab, setActiveTab] = useState("Информация");
+  const navigate = useNavigate();
 
   const renderContent = () => {
     switch (activeTab) {
@@ -25,7 +27,7 @@ function EditProfile() {
     <div className="editProfile">
       <Header />
       <div className="profileContainer">
-        <div className="backContainer">
+        <div className="backContainer" onClick={() => navigate('/persprof')}>
           <img src="/backIcon.svg" className="backIcon" alt="back" />
           <p>Назад</p>
         </div>
